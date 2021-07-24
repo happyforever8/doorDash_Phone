@@ -62,3 +62,13 @@
       刷题网 药饿散舞原题，我读完题收到了惊吓，电面四十五分钟竟然考dp hard的题（这一道题我以为是VO的）
       
 （9） 刷题网凉摆 但是是求最大面积
+
+（10）很常规的一道题，不知道是不是leetcode原题。
+
+      Largest Contiguous Block
+
+      给一个图（vector<vector<int>>)，如果数字连续递增就算相连
+
+      找图里最大个相连子图
+      
+      shuold be 329 Longest Increasing Path in a Matrix
