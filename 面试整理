@@ -1,0 +1,83 @@
+
+先发泄一下我的怒火，简直是挂的莫名其妙。十分怀疑我是不是给烙印面试官黑了。
+一开始就是简单介绍一下自己，然后开始写题。
+题目是地里之前的新题，就是假设有两个menu, 它们是以树结构表示的，让你判断这两颗树是否相同。
+Node(key, val, List<Node>children).  如果val变了，或者children 变了，都算变。 children 的顺序没有关系。
+
+我直接开始说思路，就是同时遍历两颗树， 改动的情况，分三种， deleted branch， added new branch， update node value。 说完，我和面试官确认思路，他有没有听懂，有没有问题。他说挺好的，然后我就是开始写了。
+写代码秒了，这个时候大概整个面试过去30分钟多一点。然后他提供了一个test case，他没有和我明说这个test case 的output应该是啥。我run 完我的代码，我以为他给的tree 是两个不同的tree，我的代码的method signature 是 isModfied(), 返回false，我就回头开始debug， 先把input 画出来，发现其实是两个一样的树，然后我再和他确认。他才告诉我说， 他以为signature 是 isIdentical(). 然后我再修改了两个例子，去cover 另外两种情况， deleted 和 added, 都没有问题。 所以算是bug free 吧。然后又问了问我corner case 的情况，我就说可以考虑万一两个点是null,或者其中一个点是null 的情况。然后再稍微改了改代码。
+
+
+followup 是问想要知道有多少点被改动了，我和他确认了一些情况，然后开始说思路，这个时候 45 分钟多了。思路就很简单， deleted 的branch 就去old tree 中数所有的节点。 added 的branch 就去new tree 中数所有的节点。 updated 就是 加自己。 他表示认可，这次由于时间不够，所以我是一边说一边开始写码的。写完大概 50 分钟的样子，改一改test case测试，有一点小问题。 他就说”时间不够了，我知道给你再多5分钟肯定能够解决的。“
+
+
+他这么说，那我就没说啥。然后他就先把code session 关了。 我开‍‍‍‍‍‍‍‍‌‍‌‌‍‌‌‌‌‌始问问题，大概聊了 10分钟的样子。期间氛围还算是挺融洽的。
+
+面完，我觉得稳了。
+
+recruiter 今天和我说挂了。原因是面试，didn't go as well as we had hoped.  
+吐槽一下这个recruiter， 之前给我安排面试，还安排了错误的track。
+我是真不知道哪里出问题了，是被黑了，还是哪里还不够好，还是position 被填了，recruiter 就是敷衍的回复一下。
+
+
+
+
+Doordash prep
+https://www.1point3acres.com/bbs/thread-772822-1-1.html 高频题整理
+•	LC 759 add-on: 返回给定区间内的结果
+•	LC 210  add-on: 需考虑有环，无环
+•	1235
+•	973
+•	695 add-on：有很多数字，不是只有0，1，算相同数字联通的最大面积， follow-up：如果数组很大，存不进内存如何处理
+•	1359 最后需要推公式，就是高中数组的知识，边界条件还完美契合递推公式
+•	1129 
+•	捐款系统
+•	yelp/instagram
+
+https://www.1point3acres.com/bbs/thread-778790-1-1.html
+•	题目比较有意思，感觉是小哥自己出的题， 有点类似简易版的word ladder II
+
+https://www.1point3acres.com/bbs/thread-775324-1-1.html
+•	795
+
+https://www.1point3acres.com/bbs/thread-775132-1-1.html
+•	1235 加了一个end_time的限制，需要自己过一遍input的list，检查是不是超过了一个限定的end_time
+
+https://www.1point3acres.com/bbs/thread-774788-1-1.html
+•	part 1: 数独是否valid  part 2: solve数独  follow up: 优化
+
+https://www.1point3acres.com/bbs/thread-774313-1-1.html
+•	1229
+
+https://www.1point3acres.com/bbs/thread-773475-1-1.html
+•	Leetcode36和37
+
+https://www.1point3acres.com/bbs/thread-772711-1-1.html
+•	地里之前的新题，就是假设有两个menu, 它们是以树结构表示的，让你判断这两颗树是否相同。Node(key, val, List<Node>children). 
+如果val变了，或者children 变了，都算变。 children 的顺序没有关系。
+
+https://www.1point3acres.com/bbs/thread-772574-1-1.html
+•	最近面得job scheduling的原题，跟leetcode那道题很像 followup，就是说现在可以允许同时多个job同时进行，e.g.加一个变量 max_allowed_parallel_runs.
+
+
+https://www.1point3acres.com/bbs/thread-772099-1-1.html
+•	Given a list of intervals which represent employee working hours and a time range, return the intervals of the free time within the time range.
+https://www.1point3acres.com/bbs/thread-771662-1-1.html
+https://www.1point3acres.com/bbs/thread-770584-1-1.html
+
+•	题目是一个bi-directional graph, 然后有一些edge定义为(start_node, end_node, weight). 需要找出从node1-->nodeN所有的最短路径
+https://www.1point3acres.com/bbs/thread-770157-1-1.html
+•	给一个餐馆位置以及一组driver位置，返回离餐馆最近的k个driver。
+
+https://www.1point3acres.com/bbs/thread-768192-1-1.html
+•	Given a set list of pickups and deliveries for order, figure out if the given list is valid or not. A delivery cannot happen for an order before pickup.
+https://www.1point3acres.com/bbs/thread-766324-1-1.html
+
+•	759 额外有一个startTime, endTime and minDuration. 需要单独判断一下
+https://www.1point3acres.com/bbs/thread-766276-1-1.html
+•	电面还是地里的老题，topo sort，但是面的时候发现面试官会想让你自己把需求和模型说出来，而不是单纯的写topo sort。
+大家要注意各种Corner case是否需要handle，不能纯背course schedule
+
+
+
+
