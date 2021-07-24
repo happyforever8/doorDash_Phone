@@ -1,0 +1,24 @@
+最近面得job scheduling的原题，跟leetcode那道题很像, 输入是int[] job_start
+int[] job_end
+int[] job_profit
+int start_run_time
+int end_run_time
+
+比如说
+[2, 3, 5, 7]
+[6, 5, 10, 11]
+[6, 5, 2, 4]
+0,
+10
+
+输出是max_profit = 6
+
+很快写完之后问了个followup，就是说现在可以允许同时多个job同时进行，e.g.加一个变量 max_allowed_parallel_runs.
+
+max_allowed_parallel_runs = 1 那结果还是6.
+如果 max_allowed_parallel_runs = 2， 那结‍‍‍‍‍‍‍‍‌‍‌‌‍‌‌‌‌‌果就是11。
+
+followup没答出来，还请大家赐教。
+
+
+https://www.1point3acres.com/bbs/thread-772574-1-1.html
