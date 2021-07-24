@@ -87,6 +87,10 @@
 
 （12）   题目类似刷题网 流久无， 有略微的改动，矩阵中是任意正整数， 数字相同的临近位置算一个相互连通的block， 也是要求返回最大的block size
 
+        another one
+              利口柳旧屋 地理的高频题 dfs，bfs两种写法
+               followup 问如果数据量很大怎么办
+
 （13）核心算法还是拓扑排序，题目解法类似course schedule。 输入为n个package，和packages之间的dependence关系。
      如果package没有dependence会用-1代替。但不是每一个‍‍‍‍‍‍‍‍‌‍‌‌‍‌‌‌‌‌没有dependence的package都有-1这一条数据。followup类似course schedule 2。问了时间空间复杂度。第二天通知过了。
      
@@ -94,6 +98,8 @@
       1. 给定一个序列有pickup和delivery ，check是不是valid。取货要在送货之前，所有单最后都要送货完成
       2. 给定N, 打印所有valid序列
       3. 推导计算valid序列数量的公式
+      
+      another one。力抠 异散污韭
       
  （15）163
 
@@ -110,3 +116,27 @@
     （18）
       经典面经题 里扣 腰叁舞酒变形第一问验证valid sequence 同一个order先p后d 不可重复pd 所有order必须有p有d
       第二问 给定order数量 generate所有valid sequ‍‍‍‍‍‍‍‍‌‍‌‌‍‌‌‌‌‌ence
+（19）
+      算法问题：每个送餐员有坐标x，y和评价等级。 选择距离最近的k个送餐员。如果两个送餐员距离一样，优先选取评价等级高者。利口9732. Follow up：实际运用时会出现什‍‍‍‍‍‍‍‍‌‍‌‌‍‌‌‌‌‌么问题？
+    提示：送餐员太多了。
+
+（20）给一个start和end两个时间，一个duration，一些区间List of [s, e]表示一个人已经有的meeting的时间，
+      返回在start到end之内，这个人所有时间长度大于duration的空闲的时间可以schedule新的meeting
+
+      先merge这些区间，sort，然后从给出的start开始，check到下一个meeting开始的时间的长度是否大于duration。
+      如果大于就加到result里。再到这个meeting end的时间，再check到下一个meeting开始的时间的长度是否大于durat‍‍‍‍‍‍‍‍‌‍‌‌‍‌‌‌‌‌ion，直到end
+      
+ （21）题目是有很多程序， 编译A需要依赖于编译B， C， 需要输出编译的元素序列, 需要检测有环的情况。Eg.  
+
+            1. A: B C  input: A => B, C, A
+
+            2. A: B
+                B: C, D  input: A => C, D, B, A
+
+            3. A: C
+                B: A     input: A => C, A
+
+
+            答案就是BFS‍‍‍‍‍‍‍‍‌‍‌‌‍‌‌‌‌‌ + 一些判断， 或者用topological sort。
+            
+ （22）题目和地里其他朋友们说的差不多，就是给定一个matrix里面有好多integers，找最大block size。
