@@ -1,0 +1,40 @@
+
+经典面经题目，面试官结束的时候还夸了一波第一次见到有人一次写对的。面过之后三小时通知进入下一轮。
+
+题目：给定两个n叉树，求这两个树之间有多少个节点差异。
+
+树的结构如下：
+class TreeNode(object):
+  key = str
+  value = str
+  children = List[TreeNode]
+
+def compute_diff(old_tree: TreeNode, new_tree: TreeNode) -> int:
+  pass
+
+一些判定规则如下（面试时请与面试官clarify，不要上来就说是这样，至少要会演）：
+1. 如果node key一样，value一样，视为同一个节点。
+2. 如果node key一样，value不同，视为不同节点，但树的结构保持不变。
+3. 如果node key不同，则视为完全不同的两棵树，答案应该返回这两棵树里一共有多少节点。
+4. children数组里的顺序无关。
+
+def compute_diff(old_tree: TreeNode, new_tree: TreeNode) -> int:
+  if old_tree is None and new_tree is None:
+    return 0
+  elif old_tree is None:
+    return get_node_count(new_tree)
+  elif new_tree is None:
+    return get_node_count(old_tree)
+  elif old_tree.key != new_tree.key:
+    return get_node_count(old_tree) + get_node_count(new_tree)
+
+  ret = 0
+  if old_tree.value != new_tree.value:
+    ret += 1
+
+  new_tree_children = {c.key: c for c in new_tree.children}
+  for old_child in old_tree.children:
+    ret += compute_diff(old_child, new_tree_childre‍‍‍‍‍‍‍‍‌‍‌‌‍‌‌‌‌‌n.pop(old_child.key, None))
+  for remaining_new_tree_child in new_tree_children.values():
+    ret += get_node_count(remaining_new_tree_child)
+  return ret
