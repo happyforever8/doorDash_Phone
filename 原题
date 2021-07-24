@@ -32,3 +32,18 @@
 （6）
      Given a list of intervals which represent employee working hours and a time range, return the intervals of the ‍‍‍‍‍‍‍‍‌‍‌‌‍‌‌‌‌‌free time within the time range.
      https://www.1point3acres.com/bbs/thread-772099-1-1.html
+     
+ （7）全是面经　提供个数据点
+      海投 五月份 电面 齐久武
+      onsite 六月份初
+      2轮算法  刘久武 和 package dependency
+      package 指的是安装包，每个包会给出一些prerequisite。 最终是要求某一个包的安装序列 所以不是所有出现的包都会用到。基本是topological sorting，地里有人说用单纯bfs也行 不过我没写出来。
+
+      1轮 BQ。大体准备过亚麻得都差不多， 会别别人多一道diversity的题， 比如： have you done anythign to improve the diversity of your team?
+
+      1轮 系统设计： 经典的捐款系统， 一开始是没有login 和固定的捐款项目。一般先画一个基本的working， 然后在scale up，加功能， 增加availability之类的。
+
+      总体来说面试体验不错， 题库非常小，package 很大，非常推荐大家试试。
+      电面和onsite也是一套题库。
+      我这轮面试是针对单个组的，onsite也基本是组里人来面试 包括HM，但是我这天HM正好有事 换了组里其他人。不知道他们家是不是全都这样。
+
