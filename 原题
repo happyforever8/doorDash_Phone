@@ -72,3 +72,26 @@
       找图里最大个相连子图
       
       shuold be 329 Longest Increasing Path in a Matrix
+     
+（11）刷题网站   起舞就
+      额外有一个startTime, endTime and minDuration. 需要单独判断一下
+      end = min(pos.first : endTime);start = max(start, startTime);if (end - start >= minDuration) {
+            res.push_back({star‍‍‍‍‍‍‍‍‌‍‌‌‍‌‌‌‌‌t, end});
+      }
+      
+      another one
+
+      LC 759，变了一点小形，输出不光是free timeslot，还需要那个timeslot哪几个employee是free的
+      完全没准备这公司事后发现是高频‍‍‍‍‍‍‍‍‌‍‌‌‍‌‌‌‌‌题，现场没来得及研究，就表演一下挂掉了
+      
+
+（12）   题目类似刷题网 流久无， 有略微的改动，矩阵中是任意正整数， 数字相同的临近位置算一个相互连通的block， 也是要求返回最大的block size
+
+（13）核心算法还是拓扑排序，题目解法类似course schedule。 输入为n个package，和packages之间的dependence关系。
+     如果package没有dependence会用-1代替。但不是每一个‍‍‍‍‍‍‍‍‌‍‌‌‍‌‌‌‌‌没有dependence的package都有-1这一条数据。followup类似course schedule 2。问了时间空间复杂度。第二天通知过了。
+     
+（14）面经题了，刷题网易散舞玖，分了三个部分：
+      1. 给定一个序列有pickup和delivery ，check是不是valid。取货要在送货之前，所有单最后都要送货完成
+      2. 给定N, 打印所有valid序列
+      3. 推导计算valid序列数量的公式
+
