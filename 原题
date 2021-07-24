@@ -94,4 +94,15 @@
       1. 给定一个序列有pickup和delivery ，check是不是valid。取货要在送货之前，所有单最后都要送货完成
       2. 给定N, 打印所有valid序列
       3. 推导计算valid序列数量的公式
+      
+ （15）163
+
+（16）接下来coding
+      1 拓扑排序  自己定义自己写 返回bool ， follow up是 返回 结果list
+      2 最大连接区间的面积，这题只说思路
+      
+ （17）。類似lc五路給一組array for meetings. ie  [3, 20], [-2, 0], [0, 2], [16, 17], [19, 23], [30, 40], [27, 33].
+      可以meeting 的時間 ie. [-5, 50]
+      找出free meeting time
+      可以先用lc五路找出merged meeting. 在loop一遍找出所有free ‍‍‍‍‍‍‍‍‌‍‌‌‍‌‌‌‌‌meeting time
 
