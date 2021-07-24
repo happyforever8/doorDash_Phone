@@ -1,5 +1,5 @@
 
-经典面经题目，面试官结束的时候还夸了一波第一次见到有人一次写对的。面过之后三小时通知进入下一轮。
+（1）经典面经题目，面试官结束的时候还夸了一波第一次见到有人一次写对的。面过之后三小时通知进入下一轮。
 
 题目：给定两个n叉树，求这两个树之间有多少个节点差异。
 
@@ -38,3 +38,30 @@ def compute_diff(old_tree: TreeNode, new_tree: TreeNode) -> int:
   for remaining_new_tree_child in new_tree_children.values():
     ret += get_node_count(remaining_new_tree_child)
   return ret
+============================================
+
+（2）Compare two trees.
+  A tree can have multiple childs and a several attributes.
+
+  Return the key of not completely equal nodes.
+
+  Example,
+
+  Tree 1
+           A  [ true, 1 ]
+      B          C            D           E
+  [ true, 2]  [false, 3] [true, 4] [false, 5]
+                                                            \
+                                                             F [ true, 6 ]
+
+
+  Tree 2
+           A  [ true, 1 ]
+      B         C            D           E
+  [ true, 2]  [false, 6] [false, 4] [false, 5]
+
+  Return:
+  C D F
+
+  Explain:
+  C ( 3 != 6 ), D ( true != false ), F ( F is missing in Tree 2 )
