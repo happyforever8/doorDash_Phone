@@ -105,4 +105,8 @@
       可以meeting 的時間 ie. [-5, 50]
       找出free meeting time
       可以先用lc五路找出merged meeting. 在loop一遍找出所有free ‍‍‍‍‍‍‍‍‌‍‌‌‍‌‌‌‌‌meeting time
-
+      
+      
+    （18）
+      经典面经题 里扣 腰叁舞酒变形第一问验证valid sequence 同一个order先p后d 不可重复pd 所有order必须有p有d
+      第二问 给定order数量 generate所有valid sequ‍‍‍‍‍‍‍‍‌‍‌‌‍‌‌‌‌‌ence
