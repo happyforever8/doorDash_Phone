@@ -1,0 +1,9 @@
+（1） 给一个二位int矩阵，数岛屿的个数，里面有各种不同的value。
+
+  我用DFS写的，有点小bug出了stack overflow，自己改过来了。
+
+  Follow-up是问如果矩阵很大没法存到memory怎么办，可以存硬盘上然后maintain一个list of inputStream
+  ，每个row从硬盘里读。接着问DFS还能不能行？答说不得行因为会有Stack Overflow，应该用BFS，如果queue很大也可‍‍‍‍‍‍‍‍‌‍‌‌‍‌‌‌‌‌以overflow到硬盘上。上周四面的，这周三通知pass。
+  
+  （2）利口 找最大岛
+
